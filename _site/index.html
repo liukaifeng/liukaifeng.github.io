@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>
+    
+      Soki's Blog &middot; 
+    
+  </title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  
+
+  <!-- code highlighting-->
+  <link rel="stylesheet" href="/lib/highlight/styles/hybrid.css">
+  <script src="/lib/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>hljs.configure({ ignore: ['text'] });</script>
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <header class="header">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default .navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="color:#333">Soki's Blog</a>
+        <p class="navbar-text">God does not play dice.</p>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-search">
+            <form class="navbar-form navbar-left" role="search" id="search-form">
+              <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="color:#777">Go!</button>
+                  </span>
+                  <input type="text" id="search-input" class="form-control" placeholder="Search">
+                  
+              </div>
+            </form>
+          </li>
+          <li>
+            <a href="/archives.html">Archives</a>
+          </li>
+          <li>
+            <a href="/categories.html">Categories</a>
+          </li>
+          <li>
+            <a href="/tags.html">Tags</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  
+    <div class="container">
+  <div class="row-fluid main">
+    <div class="content posts col-md-9">
+      
+      <article class="post-preview">
+        <h1 class="post-title">
+          <a href="/coding4fun/multisite-setting.html">利用Apache进行多站点配置</a>
+        </h1>
+
+        <div class="post-info">
+          <span class="post-date">08 Aug 2017</span>
+           | 
+            <span class="fa fa-folder-open" aria-hidden="true">
+            
+              <a class="categories" href="/categories.html#coding4fun">coding4fun</a>
+            
+            </span>
+          
+          
+        </div>
+
+        <div class="content">
+          <p>用了静态网页之后，主机就空闲了，当初辛辛苦苦跟工信部折腾了好几个月连案都备好了。。总感觉特别亏（其实就是舍不得wordpress的搜索功能。。）转念一想，拿wp当图片上传服务也是不错啊，这样就省去找第三方图床了。</p>
+
+<p>我的目标：</p>
+
+<ul>
+  <li>www.lszero.com 显示主页面。</li>
+  <li>blog.lszero.com 对应静态site。</li>
+  <li>wp.lszero.com 对应wordpress。</li>
+</ul>
+
+<p>我这里用的是apache来实现的，也可以用nginx。</p>
+
+<p>因为我的测试平台是Ubuntu，故跟网上的配置文件有些不一样。如网上说的apache配置文件<code class="highlighter-rouge">http.conf</code>，在我的平台下是<code class="highlighter-rouge">/etc/apache2/apache2.conf</code>。</p>
+
+
+        </div>
+
+        <div class="post-more">
+          <a class="read-more" href="/coding4fun/multisite-setting.html">Read More</a>
+        </div>
+      </article>
+      <hr />
+      
+      <article class="post-preview">
+        <h1 class="post-title">
+          <a href="/coding4fun/static-website-with-jekyll.html">从WordPress到静态网站</a>
+        </h1>
+
+        <div class="post-info">
+          <span class="post-date">01 Aug 2017</span>
+           | 
+            <span class="fa fa-folder-open" aria-hidden="true">
+            
+              <a class="categories" href="/categories.html#coding4fun">coding4fun</a>
+            
+            </span>
+          
+           | 
+            <span class="fa fa-tag" aria-hidden="true">
+            
+              <a class="post-tags" href="/tags.html#github">github</a>
+            
+              <a class="post-tags" href="/tags.html#jekyll">jekyll</a>
+            
+              <a class="post-tags" href="/tags.html#bootstrap">bootstrap</a>
+            
+            </span>
+          
+        </div>
+
+        <div class="content">
+          <p>作为一个极简主义者，越来越受不了WordPress的臃肿。主要自己平时都是用Markdown来做记录，而WordPress支持的不是很好，另外有时写的md长文通过三方软件导出的html也不造放在wp的什么地方才合适，管理起来还不如几个静态页面来得方便。于是有了某天来个大整顿的想法。</p>
+
+<p>对前端只停留在css的我，花了整三天时间，从Hexo到Jekyll再到Bootstrap，以及各种markdown2html解析器…最后基本算是从头写了一个基于Jekyll的website theme 😓  在此记录了各种前端坑，自认为还算详细吧。</p>
+
+
+        </div>
+
+        <div class="post-more">
+          <a class="read-more" href="/coding4fun/static-website-with-jekyll.html">Read More</a>
+        </div>
+      </article>
+      <hr />
+      
+      <article class="post-preview">
+        <h1 class="post-title">
+          <a href="/algorithm/computational-geometry.html">计算几何</a>
+        </h1>
+
+        <div class="post-info">
+          <span class="post-date">27 Apr 2017</span>
+           | 
+            <span class="fa fa-folder-open" aria-hidden="true">
+            
+              <a class="categories" href="/categories.html#Algorithm">Algorithm</a>
+            
+            </span>
+          
+          
+        </div>
+
+        <div class="content">
+          <h2 id="点和线">点和线</h2>
+<h3 id="基础">基础</h3>
+<p>向量  $\vec{a} = (x_1, y_1), \vec{b} = (x_2, y_2)$.</p>
+
+<p>(1) <strong>点积</strong>:  <script type="math/tex">\vec{a}\cdot \vec{b} = x_1x_2 + y_1y_2 = \vert a \vert \vert b \vert cos\theta</script></p>
+
+<p>(2) <strong>叉积</strong> (cross product):</p>
+
+<p><img src="http://wp.lszero.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-27-at-11.20.09-AM.png" style="zoom:50%; float:right" /></p>
+
+<p><script type="math/tex">% <![CDATA[
+\vert \vec{a}\times \vec{b} \vert = det\begin{bmatrix}x_1 & x_2 \\y_1 & y_2 \end{bmatrix}= x_1y_2 - x_2y_1 = \vert a \vert \vert b \vert sin\theta %]]></script>.</p>
+
+<p>$\vec{a}\times \vec{b} =  - \vec{b}\times \vec{a}$</p>
+
+<p>看作由点(0, 0), $\vec{a}$, $\vec{b}$ 和 $\vec{a}+\vec{b}=(x_1+x_2, y_1+y_2)$所形成的平行四边形的有向面积.</p>
+
+<p><strong>右手</strong>定则判断方向.</p>
+
+<p>(3) 向量 $\vec{a}, \vec{b}$ <strong>共线</strong>:  $\vec{a}\times \vec{b} = x_1y_2 - x_2y_1 = 0$</p>
+
+<p>向量 $\vec{a}, \vec{b}$ <strong>垂直</strong>:  $\vec{a}\cdot \vec{b} = x_1x_2 + y_1y_2 = 0$</p>
+
+<p>(4) 点 $P_1 = (x_1, y_1), P2 = (x_2, y_2)$, 则 $\overrightarrow{P_1P_2} = (x_2-x_1, y_2-y_1)$.</p>
+
+<p>(5) 判断三点共线: <code class="highlighter-rouge">叉乘==0</code>.</p>
+
+<p>(6) 判断点P在线段$P_1P_2$上:</p>
+
+<p><code class="highlighter-rouge">叉乘==0 &amp;&amp; (P1.x-P.x)*(P2.x-P.x)&lt;0 &amp;&amp; (P1.y-P.y)*(P2.y-P.y)&lt;0</code></p>
+
+<p>(7) 判断两直线平行: <code class="highlighter-rouge">叉乘==0</code>.</p>
+
+
+        </div>
+
+        <div class="post-more">
+          <a class="read-more" href="/algorithm/computational-geometry.html">Read More</a>
+        </div>
+      </article>
+      <hr />
+      
+      <article class="post-preview">
+        <h1 class="post-title">
+          <a href="/algorithm/alibaba-interview-201704.html">阿里笔试两道编程题</a>
+        </h1>
+
+        <div class="post-info">
+          <span class="post-date">26 Apr 2017</span>
+           | 
+            <span class="fa fa-folder-open" aria-hidden="true">
+            
+              <a class="categories" href="/categories.html#Algorithm">Algorithm</a>
+            
+            </span>
+          
+          
+        </div>
+
+        <div class="content">
+          <p>阿里笔试没做啊, 感谢同学过来分享讨论.</p>
+
+<p>感觉其中的概率题还是挺有意思的, 赶紧记录一下。思路不一定对… (汗…</p>
+
+<hr />
+
+<p>第一道.</p>
+
+<pre><code class="language-text">给一个矩形, 再给一堆矩形里的线段, 问是否存在一条路线可以从左下角走到右上角(要求不穿过线段).
+</code></pre>
+
+<p>思路: 用并查集把两条相交的线段作为一个集合, 然后对每个集合求上下左右边界, 判断这个子矩阵是否截断了从左下角走到右上角的路径.</p>
+
+<hr />
+
+<p>第二道.</p>
+
+<pre><code class="language-text">小伙纸要去跟 n 个妹纸相亲, 每次随机见一个妹纸(可能是之前已经见过的). 问至少相亲几次使得这 n 个妹纸都见过.
+</code></pre>
+
+<p>思路: 得益于之前做的<a href="http://lszero.com/1595/2017-microsoft-intern-hihocoder/">微软第一题</a>, 感觉有点像, 但也不知道是不是最优解法…</p>
+
+<p>假如当前已经见了 k 个妹纸, 要见第 k+1个妹纸时, 相亲次数的期望值为:  ∑∞i=1i(kn)i−1n−kn. (这个公式怎么来? 参考之前<a href="http://lszero.com/1595/2017-microsoft-intern-hihocoder/">微软</a>那张树的图就能推出来)</p>
+
+<p>另 p=k/n, 则上式为</p>
+
+<p>$(1-p)\sum_{i=1}^\infty i*p^{i-1}=(1-p)(\sum_{i=1}^\infty p^i)’=(1-p)(\lim_{n \rightarrow \infty}p\frac{1-p^n}{1-p})’=(1-p)(\frac{p}{1-p})’=1-p$</p>
+
+
+        </div>
+
+        <div class="post-more">
+          <a class="read-more" href="/algorithm/alibaba-interview-201704.html">Read More</a>
+        </div>
+      </article>
+      <hr />
+      
+      <article class="post-preview">
+        <h1 class="post-title">
+          <a href="/algorithm/reservoir-sampling.html">水塘抽样</a>
+        </h1>
+
+        <div class="post-info">
+          <span class="post-date">21 Oct 2016</span>
+           | 
+            <span class="fa fa-folder-open" aria-hidden="true">
+            
+              <a class="categories" href="/categories.html#Algorithm">Algorithm</a>
+            
+            </span>
+          
+          
+        </div>
+
+        <div class="content">
+          <p>先看几个问题：</p>
+
+<ul>
+  <li>从一个很大的源代码中随机选取一行。</li>
+  <li>对一个长度未知的链表随机选取其中的k个节点。</li>
+</ul>
+
+<p><strong>水塘抽样</strong>(<a href="https://en.wikipedia.org/wiki/Reservoir_sampling">Reservoir sampling</a>) 是随机算法的一种。其目的在于从包含n个项目的集合S中选取k个样本，其中n为一很大或未知的数量，尤其适用于不能把所有n个项目都存放到主内存的情况。</p>
+
+<p>考虑k=1的情况。算法如下：</p>
+
+<ul>
+  <li>Keep the first item in memory.</li>
+  <li>When the <em>i</em>-th item arrives (for <em>i</em>&gt;1):with probability 1/<em>i</em>, keep the new item (discard the old one)with probability 1-1/<em>i</em>, keep the old item (ignore the new one)</li>
+</ul>
+
+<p>So:</p>
+
+<ul>
+  <li>when there is only one item, it is kept with probability 1;</li>
+  <li>when there are 2 items, each of them is kept with probability 1/2;</li>
+  <li>when there are 3 items, the third item is kept with probability 1/3, and each of the previous 2 items is also kept with probability (1/2)(1-1/3) = (1/2)(2/3) = 1/3;</li>
+  <li>by induction, it is easy to prove that when there are <em>n</em> items, each item is kept with probability 1/<em>n</em>.</li>
+</ul>
+
+<p>考虑一般情况，<em>Algorithm R</em> by <a href="https://en.wikipedia.org/wiki/Jeffrey_Vitter">Jeffrey Vitter</a>：</p>
+
+
+        </div>
+
+        <div class="post-more">
+          <a class="read-more" href="/algorithm/reservoir-sampling.html">Read More</a>
+        </div>
+      </article>
+      <hr />
+      
+
+      
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          
+            <li><span>&laquo;</span></li>
+          
+
+          
+            
+              <li class="active"><a>1</a></li>
+            
+          
+            
+              <li><a href="/pages2/">2</a></li>
+            
+          
+
+          
+            <li><a href="/pages2/">&raquo;</a></li>
+          
+        </ul>
+      </nav>
+      
+    </div>
+
+    <div class="sidebar-content col-md-3">
+      <div class="main-sidebar">
+  <div class="author-avatar">
+    <img src="/assets/img/author_avatar.jpg" alt="lszero">
+  </div>
+
+  <div class="brief-intro">
+    <div class="author-name">
+      lszero
+    </div>
+    <div class="author-bio">
+      程序媛/小硕/外协/折腾/技术宅
+
+    </div>
+  </div>
+
+  <nav class="site-state">
+    <div class="site-state-item">
+      <a href="/archives.html">
+        <span class="site-state-item-count">7</span>
+        <span>Posts</span>
+      </a>
+    </div>
+    <div class="site-state-item">
+      <a href="/categories.html">
+        <span class="site-state-item-count">3</span>
+        <span>Categories</span>
+      </a>
+    </div>
+    <div class="site-state-item">
+      <a href="/tags.html">
+        <span class="site-state-item-count">3</span>
+        <span>Tags</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="social-icons">
+    <a href="https://github.com/lszero" class="btn" title="Github" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
+    <a href="http://weibo.com/u/2313016370" class="btn" title="Weibo" target="_blank"><i class="fa fa-fw fa-weibo fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.zhihu.com/people/lszero" class="btn" title="Zhihu" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse"><strong>知</strong></i></span></a>
+    <a href="https://twitter.com/_lszero" class="btn" title="Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="http://intzero.lofter.com/" class="btn" title="Lofter" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse"><strong>L</strong></i></span></a>
+  </div>
+
+  <hr />
+
+  <nav class="category-list">
+    <h3 class="sidebar-title">Categories</h3>
+    <ul>
+    
+      <li><a href="/categories.html#Algorithm">Algorithm (4)</a></li>
+    
+      <li><a href="/categories.html#CPP">CPP (1)</a></li>
+    
+      <li><a href="/categories.html#coding4fun">coding4fun (2)</a></li>
+    
+    </ul>
+  </nav>
+
+  <hr />
+
+  <nav class="tags-list">
+    <h3 class="sidebar-title">Tags</h3>
+    <ul>
+    
+      <li><a href="/tags.html#github"> github (1)</a></li>
+    
+      <li><a href="/tags.html#jekyll"> jekyll (1)</a></li>
+    
+      <li><a href="/tags.html#bootstrap"> bootstrap (1)</a></li>
+    
+    </ul>
+  </nav>
+
+  <hr />
+
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+    <footer class="footer">
+  <div class="copyright">
+      Copyright &copy; <time datetime="2017-08-09T22:19:33+08:00">2017</time> <a href="http://localhost:4000">lszero</a> | Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> | Designed by <a href="http://localhost:4000">lszero</a>
+  </div>
+</footer>
+
+    <a href="#top" class="back-to-top">^</a>
+
+<!--      -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- TOC -->
+    <script src="/assets/js/toc/TOC.js"></script>
+
+    <script>$("#search-form").submit(function(event){
+      var query = document.getElementById("search-input").value;
+      window.open("http://google.com/search?q=" + query + "%20site:" + "lszero.github.io");
+    });</script>
+  </body>
+</html>
