@@ -19,7 +19,7 @@ email: kaifeng_5liu@163.com
 description: > # this means to ignore newlines until "baseurl:"
   程序媛/小硕/外协/折腾/技术宅
 url: https://lkf_blues.coding.me/lkf  # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/lkf" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # Markdown Processors
 markdown: kramdown
