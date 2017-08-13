@@ -4,6 +4,7 @@ title: "Ubuntu系统的安装与优化"
 category: 编程
 tags: [Ubuntu, OS]
 published: true
+date:   2017-08-13 12:59:00
 ---
 
 ## 安装Ubuntu 
