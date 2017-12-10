@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: "Java 8 中的 Streams API 详解"
+category: JAVA
+tags: [JDK8,JAVA,Stream]
+published: true
+date:  2017-09-03 21:04:00
+---
 # Java 8 中的 Streams API 详解
 
 摘自：[IBM developerWorks](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/)
